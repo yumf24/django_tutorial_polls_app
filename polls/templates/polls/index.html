@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "polls/style.css" %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if question_latest %}
+        <ul>
+            {% for question in question_latest %}
+            <li>
+                <a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    {% else %}
+        <p>No polls are available</p>
+    {% endif %}
+    
+</body>
+</html>

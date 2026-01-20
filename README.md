@@ -1,2 +1,3 @@
-# django_tutorial_polls_app
-django_tutorial_polls_app
+django official tutorial ---- polls app
+
+Complete_date: 2026/1/20

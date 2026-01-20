@@ -1,0 +1,14 @@
+# python编译文件
+__pycache__/
+*.py[cod]
+
+# 虚拟环境
+.venv
+
+#数据库
+db.sqlite3
+db.sqlite3-journal
+
+# vim临时文件
+*.swp
+*.swo
